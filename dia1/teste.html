@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <script>
+        alert("Seja bem vindo ao sistema de itaubank >>");
+        alert("Saques a cima de R$9,99 taxa fixa de 5%");
+        let valorInicial = 100;
+        let tela = alert("Você tem R$" +valorInicial);
+        let valorRetirar = prompt("Insira o valor que deseja retirar: ")
+        let carteira = valorInicial-valorRetirar;
+        let taxa = valorRetirar*5/100;
+        let total = carteira-taxa;
+        if(valorRetirar < 10){
+            let novaTaxa = taxa + total;
+            alert( "Você retirou R$" + valorRetirar + " ficando com um total de : R$" +novaTaxa );
+        } else {
+            alert( "Você retirou R$" + valorRetirar + " e pagou uma taxa de 5% no valor do saque, ficando com um total de : R$" +total );
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
