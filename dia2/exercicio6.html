@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+        // Escreva um programa que, dado o valor da conta de uma refeição 
+        //realizada em um restaurante, calcule a comissão do garçom (10% do 
+        //valor da conta) e exiba: o subtotal, a comissão do garçom e o total, 
+        //todos em reais.
+        
+        let receberValor = parseInt(prompt("Informe o valor na nota : "));
+        let garcomComissao = receberValor/10;
+        let total = receberValor + garcomComissao;
+
+        document.write("Subtotal: R$ "+receberValor.toFixed(2)+" Taxa de serviço: R$ "+garcomComissao.toFixed(2)+" Total = R$ "+total.toFixed(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

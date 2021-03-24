@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <script>
+        //Implemente um programa que recebe um valor real referente a um raio R e calcula:
+        //a) O perímetro do circulo de raio R.
+        //b) A área do círculo de raio R
+        //c) O volume da esfera de raio R.
+
+        let receberRaio = parseFloat(prompt("Insira o valor do Raio: "));
+        let perimetro = 2*3.14*receberRaio;
+        let area = 3.14*Math.pow(receberRaio,2);
+        let volume = (4*3.14*Math.pow(receberRaio,3))/3;
+
+        alert("Perímetro: "+perimetro.toFixed(2)+" Área: "+area.toFixed(2)+" Volume: "+volume.toFixed(2));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
