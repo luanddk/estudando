@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <script>
+// O custo ao consumidor de um carro novo é a soma do preço de 
+//fábrica com o percentual de lucro do distribuidor e com dos impostos, 
+//em que o lucro e os impostos são calculados com base no preço de 
+//fábrica. Implemente um programa que receba o preço da fábrica de um 
+//veículo, o percentual de lucro do distribuidor e o percentual de imposto, 
+//calcule e mostre:
+//O valor correspondente ao lucro do distribuidor;
+//O valor correspondente aos impostos;
+//O preço final do veículo.
+
+        let precoFabrica = parseFloat(prompt("Informe o valor de fábrica do veículo :"));
+        let lucroDistribuidor = parseFloat(prompt("Informe a porcentagem de lucro :"));
+        let imposto = parseFloat(prompt("Informe a porcentagem do imposto :"));
+        let calculoD =(lucroDistribuidor/100)*precoFabrica;
+        let calculoI =(imposto/100)*precoFabrica;
+        let total = precoFabrica+calculoD+calculoI;
+
+        alert("Lucro do Distribuidor: " +calculoD+ " Impostos: " +calculoI+ " Total: " +total);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

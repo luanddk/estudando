@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+    <script>
+//Modifique o programa da questão 2) para que ele exprima a parte 
+//fracionária em horas. Ex.: 60 horas = 2 dias e 12 horas. Dica: use o 
+//operador “%”.
+
+        let receberHora = parseInt(prompt("Informe a hora: "));
+        let converterHora = receberHora%24;
+        let converterDia = receberHora/24;
+
+        alert(Math.trunc(converterDia)+ " Dias & "+converterHora+ " Horas.");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

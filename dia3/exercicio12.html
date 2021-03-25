@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+    <script>
+        //Implemente um programa que recebe seis valores inteiros 
+        //positivos D0, M0 e A0; D1, M1 e A1. Esses valores correspondem a 
+        //duas datas diferentes, em que D, M e A se referem a dia, mês e ano, 
+        //respectivamente. O programa deverá, então, calcular a diferença das 
+        //datas em dias. Para isso, considere que um ano tem 360 dias, um mês 
+        //tem 30 dias e a segunda data informada como entrada sempre será
+        //posterior à primeira.
+
+        let diaZero = 1;
+        let mesZero = 1;
+        let anoZero = 2000;
+        let diaUm = 1;
+        let mesUm = 3;
+        let anoUm = 2001;
+
+        let diferencaDia = Math.abs(diaUm-diaZero);
+        let converterMes = Math.abs((mesUm-1)*30)-((mesZero-1)*30);
+        let converterAno = Math.abs(anoUm-anoZero)*365;
+        let total = diferencaDia+converterMes+converterAno;
+
+        alert(total+" Dias");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
