@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <script>
+//Implemente um programa que recebe três valores in teiros referentes a uma 
+//data e a imprime com o mês por extenso. Exemplo de entrada: “10 5 2013”.
+//Exemplo de saída: “10 de Maio de 2013”.
+
+        let receberDia = parseInt(prompt("Insira o dia: "));
+        let receberMes = parseInt(prompt("Insira o mês ex:'1-12'"));
+        let receberAno = parseInt(prompt("Insira o ano: "));
+        
+        switch(receberMes){
+            case 1:
+                var mes = "Janeiro";
+                break;
+            case 2:
+                var mes = "Fevereiro";
+                break;
+            case 3:
+                var mes = "Março";
+                break;
+            case 4:
+                var mes = "Abril";
+                break;
+            case 5:
+                var mes = "Maio";
+                break;
+            case 6:
+                var mes = "Junho";
+                break;   
+            case 7:
+                var mes = "Julho";
+                break;
+            case 8:
+                var mes = "Agosto";
+                break;
+            case 9:
+                var mes = "Setembro";
+                break;
+            case 10:
+                var mes = "Outubro";
+                break;
+            case 11:
+                var mes = "Novembro";
+                break;
+            case 12:
+                var mes = "Dezembro";
+                break;
+            default:
+                alert("Mês não existe!");    
+                break;                      
+        }
+
+        alert(receberDia+" de "+mes+" de "+receberAno);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
