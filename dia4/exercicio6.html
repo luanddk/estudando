@@ -9,14 +9,14 @@
 //implemente um programa que recebe três números (a , b e c) e determina 
 //se o terceiro número (c) está no intervalo fechado dos outros dois.
         
-        let a = prompt("");
-        let b = prompt("");
-        let c = prompt("");
+        let a = parseInt(prompt()); 
+        let b = parseInt(prompt()); 
+        let c = parseInt(prompt());
 
-        if(c >= b || c <= a){
-            alert("Número fora do intervalo");
+        if(c >= b && c <= a || c <= b && c >= a){
+            alert("Dentro");
         }else{
-            alert("Número dentro do intervalo");
+            alert("Fora");
         }
     </script>
 </head>
