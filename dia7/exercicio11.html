@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <script>
+//Implemente um programa que calcule o Índice de Massa Corporal 
+//(IMC) de uma pessoa e indique sua classificação de peso. A relação 
+//entre IMC e classificação é dado na tabela abaixo:
+
+alert("Seja bem vindo ao IMC search!");
+        let peso = prompt("Insira o seu peso em KG: ex->(62.91) ");
+        let altura = prompt("Insira a sua altura: ex->(1.70) ");
+        let imc = peso/Math.pow(altura,2);
+        
+        if(imc < 18.5){
+            alert("O seu IMC é: " +imc.toFixed(2)+ " Abaixo do peso");
+        }else if(imc < 24.9){
+            alert("O seu IMC é: " +imc.toFixed(2)+ " Peso normal"); 
+        }else if(imc < 29.9){
+            alert("O seu IMC é: " +imc.toFixed(2)+ " Sobrepeso"); 
+        }else if(imc >= 30){
+            alert("O seu IMC é: " +imc.toFixed(2)+ " Obesidade"); 
+        }else{
+            alert("N/A");
+        }
+        
+         
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
