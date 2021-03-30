@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <script>
+//Implemente um programa que calcula as raízes de uma equação do 
+//segundo grau, do tipo ax² + bx + c = 0. O programa deve pedir que o 
+//usuário forneça os coeficientes a, b, e c, que podem ser números 
+//reais, e então calcular e imprimir o número correto de raíze s distintas. 
+//Lembre-se que a equação pode ter 2 raízes, 1 raiz, ou nenhuma raiz 
+//(neste caso o programa deve emitir uma mensagem indicando a ausên 
+//cia de raízes).
+
+        a = parseInt(prompt("Informe o coeficiente a"));
+        if (a === 0 ) {
+            alert("Não é equação do segundo grau");
+        }
+        b = parseInt(prompt("Informe o coeficiente b"));
+        c = parseInt(prompt("Informe o coeficiente c"));
+        delta = b*b - 4*a*c;
+        if (delta <0 ) {
+            alert("Não tem raízes reais");
+        }else if (delta ===0 ) {
+            alert("Só tem uma raiz ="+(-b/2*a));
+        
+        } else {
+        alert("Tem duas raízes X1="+ (-b + Math.sqrt(delta)/2*a)+" X2="+(-b - Math.sqrt(delta)/2*a));
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

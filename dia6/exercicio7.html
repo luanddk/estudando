@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+    <script>
+//Implemente um programa que recebe um valor inteiro e determina se ele é divisível por 3, por 4 e por 5 ao mesmo tempo.
+
+
+        receberNumero = parseInt(prompt("Insira o número inteiro: "));
+        if(receberNumero % 3 == 0 && receberNumero % 4 == 0 && receberNumero % 5 == 0){
+            alert("O número é divisível por 3,4 e 5")
+        }else if(receberNumero % 3 == 0 && receberNumero % 4 == 0){
+            alert("O número é divisível por 3 e 4")
+        }else if(receberNumero % 4 == 0 && receberNumero % 5 == 0){
+            alert("O número é divisível por 4 e 5")
+        }else if(receberNumero % 5 == 0 && receberNumero % 3 == 0){
+            alert("O número é divisível por 5 e 3")
+        }else if(receberNumero % 3 == 0){
+            alert("O número é divisível por 3")
+        }else if(receberNumero % 4 == 0){
+            alert("O número é divisível por 4")
+        }else if(receberNumero % 5 == 0){
+            alert("O número é divisível por 5")
+        }else{
+            alert("Error!")
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
