@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+    <script>
+//Sabendo que 1 de janeiro de 2013 foi uma terça-feira, escreva 
+//um programa que receba o número do dia do ano e diga em qual 
+//dia da semana cai esse dia no ano de 2013. Se o usuário inserir 
+//um número maior que 365 apresentar uma mensagem de que o 
+//ano de 2013 tem apenas 365 dias. Exemplos de entrada e saída:
+        
+    let receberDia= parseInt(prompt(""));
+    if(receberDia < 366){
+        var diasemana = receberDia%7;
+    switch(diasemana){
+        case 1:
+            alert("Terça-Feira dia " +receberDia);
+        break;
+        case 2:
+            alert("Quarta-Feira dia " +receberDia);
+        break;
+        case 3:
+            alert("Quinta-Feira dia " +receberDia);
+        break;
+        case 4:
+            alert("Sexta-Feira dia " +receberDia);
+        break;
+        case 5:
+            alert("Sábado dia " +receberDia);
+        break;
+        case 6:
+            alert("Domingo dia " +receberDia);
+        break;
+        case 0:
+            alert("Segunda-Feira dia " +receberDia);
+        break;
+        default: break;
+    }
+}else{
+    alert("Dia não consta!");
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
