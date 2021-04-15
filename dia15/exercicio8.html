@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+    <script>
+        //Implemente um programa que recebe dois números inteiros, N e M,
+        //repetidas vezes. Para cada vez que o programa receber os dois números, ele
+        //deve fazer uma contagem de M até N (inclusive). O programa deve encerrar
+        //quando os valores informados forem iguais entre si. Note que N não é
+        //necessariamente maior do que M.       
+
+        var receberN = 0;
+        var receberM = -1;
+
+        while (receberM != receberN) {
+
+            receberM = parseInt(prompt("Informe o número M"));
+            receberN = parseInt(prompt("Informe o número N"));
+
+            if (receberM > receberN) {
+                for (i = receberM; i >= receberN; i--) {
+                    document.write(i + "<br/>");
+                }
+            } else {
+                for (j = receberM; j <= receberN; j++) {
+                    document.write(j + "<br/>");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
