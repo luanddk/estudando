@@ -23,7 +23,3 @@ console.log(array[posicao]);
 
 
 
-
-
-
-
