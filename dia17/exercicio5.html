@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <script>
+        function bubbleSort(array) {
+            var size = array.length;
+            for (i = 0; i < size - 1; i++) {
+                for (j = 0; j < size - i - 1; j++) {
+
+                    if (array[j] > array[j + 1]) {
+
+                        temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
+                }
+            }
+            return array;
+        }
+
+
+        let tamArray = parseInt(prompt("Informe o tamanho do array que deseja:"));
+        var array = new Array(tamArray);
+        for (i = 0; i < tamArray; i++) {
+            array[i] = parseInt(prompt("Informe o número da posição " + i + ": "));
+        }
+        array = bubbleSort(array);
+
+        for (i = 0; i < tamArray; i++) {
+            document.write(array[i] + "<br/>");
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

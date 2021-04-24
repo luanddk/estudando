@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 04</title>
     <script>
-        let receberArray = parseInt(prompt("Informe o tamanho do array que deseja:"));
-        for(i=0; i <= receberArray; i++){
-            var numeros = parseInt(prompt("Informe o número: " +i));
-            var array = [i];
-            document.write(array+"<br/>");
+        let tamArray = parseInt(prompt("Informe o tamanho do array que deseja:"));
+        var a = new Array(tamArray);
+        for (i = 0; i < tamArray; i++) {
+            a[i] = parseInt(prompt("Informe o número da posição " + i + ": "));
+        }
+        for (i = a.length - 1; i >= 0; i--) {
+            document.write(a[i] + "<br/>");
         }
     </script>
 </head>
+
 <body>
-    
 </body>
+
 </html>
