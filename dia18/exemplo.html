@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <script>
+        function desenha(size) {
+            
+            forI = 0;
+            forJ = 0;
+
+            for (i = 0; i < size - 1; i++) {
+                forI++;
+                for (j = 0; j < size - i - 1; j++) {
+                    forJ++;
+
+                    document.write(j + " " );
+                }
+                document.write(" <br/> ");
+            }
+            console.log("i rodou :" + forI)
+            console.log("j rodou :" + forJ)
+        }
+
+        
+        let size = parseInt(prompt("Informe o tamanho do array que deseja:"));
+        desenha(size);
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

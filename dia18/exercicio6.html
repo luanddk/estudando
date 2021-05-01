@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+        function procurarIndice(numero, array) {
+            for (i = 0; i < array.length; i++) {
+               if(numero == array[i]){
+                   console.log("posicao: " + i);
+               } 
+            }
+        }
+
+        let tamArray = parseInt(prompt("Informe o tamanho do array:"));
+        let array = new Array(tamArray);
+        for (i = 0; i < tamArray; i++) {
+            array[i] = parseInt(prompt("Informe o valor da posição: " + i));
+        }
+        let receberNumero = parseInt(prompt("Informe o número que deseja encontrar no vetor: "))
+        procurarIndice(receberNumero, array);
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
