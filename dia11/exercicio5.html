@@ -11,16 +11,16 @@
         //a tabuada desse número no padrão do exemplo a seguir. Para N = 4:
 
         var receberNumero = parseInt(prompt("Insira um valor entre 1-9 para que se faça a tabuada :"))
-         
-        while(receberNumero<0 || receberNumero > 9) {
+
+        while (receberNumero < 0 || receberNumero > 9) {
             alert("Escolha um número entre 1-9!");
             receberNumero = parseInt(prompt("Insira um valor entre 1-9 para que se faça a tabuada :"))
         }
 
         for (i = 1; i <= 9; i++) {
-                let multiplicacao = i * receberNumero;
-                document.write(receberNumero + " x " + i + " = " + multiplicacao + "<br/>");
-            }
+            let multiplicacao = i * receberNumero;
+            document.write(receberNumero + " x " + i + " = " + multiplicacao + "<br/>");
+        }
 
     </script>
 </head>
