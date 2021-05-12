@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 28 Decisão</title>
+    <script>
+        let nomeItem = prompt("Informe o nome da Carne: ");
+        var preco = 0;
+        var kg = 0;
+        switch (nomeItem) {
+            case 'Filé Duplo':
+                kg = parseInt(prompt("Informe a quantidade de Filé Duplo :"));
+                if (kg <= 5) {
+                    preco = 4.9 * kg;
+                } else {
+                    preco = 5.8 * kg;
+                }
+                break;
+            case 'Alcatra':
+                kg = parseInt(prompt("Informe a quantidade de Alcatra :"));
+                if (kg <= 5) {
+                    preco = 5.9 * kg;
+                } else {
+                    preco = 6.8 * kg;
+                }
+                break;
+            case 'Picanha':
+                kg = parseInt(prompt("Informe a quantidade de Picanha :"));
+                if (kg <= 5) {
+                    preco = 6.9 * kg;
+                } else {
+                    preco = 7.8 * kg;
+                }
+                break;
+        }
+        let pagamento = prompt("Informe a forma de pagamento: ");
+        var desconto = 0;
+        var total = preco;
+        if (pagamento == 'cartão tabajara') {
+            desconto = preco * 0.05;
+            desconto = desconto.toFixed(2);
+            total = preco - desconto;
+        }
+
+        var cupomFiscal = "Item : " + nomeItem + "<br/>";
+        cupomFiscal += "Quantidade: " + kg + "<br/>";
+        cupomFiscal += "Preço Total: " + preco + "<br/>";
+        cupomFiscal += "Tipo de Pagamento: " + pagamento + "<br/>";
+        cupomFiscal += "Desconto: " + desconto + "<br/>";
+        cupomFiscal += "Total c/s Desconto: " + total;
+
+        document.write(cupomFiscal);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

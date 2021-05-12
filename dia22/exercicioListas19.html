@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 19 Arrays</title>
+    <script>
+        let sistemas = [];
+        let contador = [0, 0, 0, 0, 0, 0];
+        let quantidadeVotos= 0;
+        let valorSis = -1;
+        
+        while (valorSis != 0) {
+            valorSis = prompt("Qual o melhor Sistema Operacional para uso em servidores?")
+            if (valorSis > 0 && valorSis <= 6) {
+                sistemas.push(valorSis);
+                contador[valorSis - 1]++;
+                quantidadeVotos++;
+            }
+        }
+        
+        for(i=0; i<contador.length; i++){
+            document.write("indice " +(i+1) + " : " + ((contador[i]/quantidadeVotos)*100).toFixed(2) + "<br/>")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
