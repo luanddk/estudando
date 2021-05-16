@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17</title>
+
+    <!--Em uma competição de salto em distância cada atleta tem direito a cinco saltos. 
+        O resultado do atleta será determinado pela média dos cinco valores restantes. 
+        Você deve fazer um programa que receba o nome e as cinco distâncias alcançadas 
+        pelo atleta em seus saltos e depois informe o nome, os saltos e a média dos saltos. 
+        O programa deve ser encerrado quando não for informado o nome do atleta. 
+        A saída do programa deve ser conforme o exemplo abaixo:
+    -->
+
+</head>
+
+<body>
+    <script>
+        var nome = '.';
+        var total = 0;
+        var mostrar = ""
+        while (nome != '') {
+            total = 0;
+            nome = prompt("Informe o nome do atleta : ");
+            if (nome === '') {
+                break;
+            }
+
+            salto = new Array(5);
+            for (i = 0; i < salto.length; i++) {
+                salto[i] = parseFloat(prompt("Informe o valor do salto " + i + " : "));
+                total = total + salto[i];
+
+            }
+            var media = total / 5;
+            mostrar += "Atleta: " + nome + "<br/>" +
+                "Primeiro Salto: " + salto[0] + "m" + "<br/>" +
+                "Segundo Salto: " + salto[1] + "m" + "<br/>" +
+                "Terceiro Salto: " + salto[2] + "m" + "<br/>" +
+                "Quarto Salto: " + salto[3] + "m" + "<br/>" +
+                "Quinto Salto: " + salto[4] + "m" + "<br/>" +
+                "Resultado final: <br/>" +
+                "Atleta: " + nome + "<br/>" +
+                "Média dos saltos: " + media + "m" + "<br/><br/>";
+        }
+        
+        document.write(mostrar);
+    </script>
+</body>
+
+</html>
