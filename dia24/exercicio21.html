@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 21 Lista</title>
+    <script>
+        /*Faça um programa que carregue uma lista com os modelos de
+        cinco carros (exemplo de modelos: FUSCA, GOL, VECTRA etc). Carregue uma outra
+        lista com o consumo desses carros, isto é, quantos quilômetros cada um desses
+        carros faz com um litro de combustível. Calcule e mostre:
+
+        O modelo do carro mais econômico;
+        Quantos litros de combustível cada um dos
+        carros cadastrados consome para percorrer uma distância
+        de 1000 quilômetros e quanto isto custará, considerando
+        um que a gasolina custe R$ 2,25 o litro. Abaixo segue uma tela de
+        exemplo. O disposição das informações deve ser o mais próxima possível ao
+        exemplo. Os dados são fictícios e podem mudar a cada execução do programa.
+        */
+    </script>
+</head>
+
+<body>
+    <script>
+        var gasolina = 2.25;
+        var km = 1000;
+        var infoCarro = new Array(6);
+        var consumoInfo = new Array(6);
+        for(i=1; i<infoCarro.length; i++){
+            infoCarro[i] = prompt("Informe o modelo do carro: ");
+            consumoInfo[i] = parseFloat (prompt("Informe quantos km o carro faz por litro: "));
+            let kmCalculo = km/consumoInfo[i];  
+            let custoComb = kmCalculo*gasolina;
+            var mostrar = [i] + " - Nome do Carro: "+ infoCarro[i]+" - "+ consumoInfo[i] + " Km/L - R$ " + custoComb.toFixed(2) + "<br/>"; 
+            document.write(mostrar); 
+        }
+    </script>
+</body>
+
+</html>
