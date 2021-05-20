@@ -27,16 +27,24 @@
     <script>
         var gasolina = 2.25;
         var km = 1000;
-        var infoCarro = new Array(6);
-        var consumoInfo = new Array(6);
-        for(i=1; i<infoCarro.length; i++){
+        var infoCarro = new Array(5);
+        var consumoInfo = new Array(5);
+        for(i=0; i<infoCarro.length; i++){
             infoCarro[i] = prompt("Informe o modelo do carro: ");
             consumoInfo[i] = parseFloat (prompt("Informe quantos km o carro faz por litro: "));
             let kmCalculo = km/consumoInfo[i];  
             let custoComb = kmCalculo*gasolina;
-            var mostrar = [i] + " - Nome do Carro: "+ infoCarro[i]+" - "+ consumoInfo[i] + " Km/L - R$ " + custoComb.toFixed(2) + "<br/>"; 
+            var mostrar = (i+1) + " - Nome do Carro: "+ infoCarro[i]+" - "+ consumoInfo[i] + " Km/L - R$ " + custoComb.toFixed(2) + "<br/>"; 
             document.write(mostrar); 
         }
+        var posMaisEco = 0;
+        for(i=0; i<consumoInfo.length; i++){
+            if(consumoInfo[i] >= consumoInfo[posMaisEco]){
+                posMaisEco = i;
+            }
+        }
+        document.write("O menor consumo é do " + infoCarro[posMaisEco])                
+
     </script>
 </body>
 
