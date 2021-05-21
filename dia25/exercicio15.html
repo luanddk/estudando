@@ -16,22 +16,49 @@
             vetor.push(aux);
         }
 
-        document.write('a - ' +(vetor.length-1)+ "<br/>" + "b - ");
+        document.write('a - ' +(vetor.length-1)+ '<br/>' +'-----------'+ "<br/>" + "b - ");
 
         for(i=0; i<vetor.length-1; i++){
             document.write(vetor[i] + ' | ');
         }
         
-        document.write('<br/>' + 'c - ');
+        document.write('<br/>'+'-----------' +'<br/>' + 'c - ');
 
         for(i=vetor.length-2; i >= 0; i--){
             document.write(vetor[i] + ' <br/> ');
         }
 
+        document.write('-----------'+"<br/>"+" d - ");
 
+        var soma = 0;
+        for(i=0; i<vetor.length-1; i++){
+            soma = soma + vetor[i];
+        }
+            document.write(soma+" (+) ");
+            
+            document.write("<br/>" + '-----------'+"<br/>"+ "e - ");
 
+        var media = vetor.length-1;
+        var result = soma/media;
 
+            document.write(result.toFixed(2) + " (Média)" + "<br/>");
+            document.write("-----------"+"<br/>"+" f - ");
 
+        for(i=0; i<vetor.length; i++){
+            if(vetor[i] > result){
+                document.write(vetor[i]+"|");
+            }
+        }
+
+            document.write("<br/>"+"-----------"+"<br/>"+" g - ");
+
+        for(i=0; i<vetor.length-1; i++){
+            if(vetor[i] < result){
+                document.write(vetor[i]+"|");
+            }
+        }
+
+        alert("Obrigado por usar nosso programa !");
     </script>
 </body>
 </html>
